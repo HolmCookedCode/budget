@@ -1,11 +1,11 @@
 import React from 'react'
 import TransactionRow from '../Components/TransactionRow'
+import style from "./Transactions.module.css"
 
 const Transactions = ({transactions}) => {
   return (
     <>
-        <table>
-
+        <table id={style.ttable} cellSpacing={0}>
             <thead>
                 <tr>
                     <th><input type="checkbox" /></th>

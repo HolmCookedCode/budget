@@ -1,0 +1,11 @@
+#ttable {
+    width: 100%;
+}
+
+thead > tr {
+    background-color: orange;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: lightgreen;
+}
