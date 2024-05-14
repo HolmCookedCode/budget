@@ -25,7 +25,9 @@ const Transactions = ({transactions}) => {
                 })} 
             </tbody>
         </table>
-
+        <div id={style.addTransBtnContainer}>
+            <button>Add Transaction</button>
+        </div>
     </>
   )
 }

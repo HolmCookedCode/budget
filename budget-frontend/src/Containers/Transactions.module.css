@@ -9,3 +9,14 @@ thead > tr {
 tbody > tr:nth-child(odd) {
     background-color: lightgreen;
 }
+
+#addTransBtnContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#addTransBtnContainer > button {
+    margin: 10px;
+    font-size: large;
+}
