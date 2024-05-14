@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Transactions from './Containers/Transactions';
 
 function App() {
+  const transactions = [
+    {
+      "id" : 1,
+      "date" : "2024-05-10",
+      "payee" : "Kroger",
+      "category" : "Groceries",
+      "memo" : "The good stuff",
+      "amount" : -83.27,
+      "cleared" : true
+    },
+    {
+      "id" : 2,
+      "date" : "2024-05-11",
+      "payee" : "Exxon",
+      "category" : "Fuel",
+      "memo" : "",
+      "amount" : -28.86,
+      "cleared" : true
+    },
+    {
+      "id" : 3,
+      "date" : "2024-05-14",
+      "payee" : "7-Eleven",
+      "category" : "Eating Out",
+      "memo" : "Breakfast sandwich",
+      "amount" : -3.89,
+      "cleared" : false
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Transactions transactions={transactions} />
     </div>
   );
 }
