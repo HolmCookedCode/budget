@@ -5,6 +5,7 @@ import axios from 'axios';
 
 const Transactions = () => {
     const [transactions, setTransactions] = useState([]);
+    const [selectedIds, setSelectedIds] = useState([]);
 
     useEffect(() => {
         axios.get("https://localhost:7029/api/transaction")
@@ -33,7 +34,7 @@ const Transactions = () => {
             </thead>
             <tbody>
                 {transactions.map(transaction => {
-                    return <TransactionRow transaction={transaction} key={transaction.id} />
+                    return <TransactionRow transaction={transaction} key={transaction.id} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />
                 })} 
             </tbody>
         </table>
