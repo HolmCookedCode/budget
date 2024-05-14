@@ -1,12 +1,14 @@
 ﻿using budget.API.Data;
 using budget.API.DTOs;
 using budget.API.Entities;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace budget.API.Controllers {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("React")]
     public class TransactionController : ControllerBase {
         private readonly DataContext _context;
 

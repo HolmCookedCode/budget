@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import TransactionRow from '../Components/TransactionRow'
 import style from "./Transactions.module.css"
+import axios from 'axios';
 
-const Transactions = ({transactions}) => {
+const Transactions = () => {
+    const [transactions, setTransactions] = useState([]);
+
+    useEffect(() => {
+        axios.get("https://localhost:7029/api/transaction")
+            .then(response => {
+                setTransactions(response.data);
+            });
+
+    }, []);
+    
+
   return (
     <>
         <table id={style.ttable} cellSpacing={0}>
