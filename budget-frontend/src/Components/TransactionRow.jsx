@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-const TransactionRow = ({ transaction, selectedIds, setSelectedIds }) => {
+const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions }) => {
+  const [balance, setBalance] = useState(0);
+
+  // style when a row is selected
   const dynamicStyle = {
     "backgroundColor": "yellow"
   };
@@ -35,9 +38,21 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds }) => {
       }
       // the selection should not change if it is already selected
     }
-
-
   };
+
+  // calculate balance
+  useEffect(() => {
+    const index = transactions.indexOf(transaction);
+    let transactionSlice = transactions;
+    transactionSlice = transactionSlice.slice(0, index + 1);
+
+    let total = 0;
+    transactionSlice.forEach((t) => {
+      total = total + t.amount;
+    });
+
+    setBalance(total);
+  }, [transaction, transactions]);
 
   return (
     <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}}>
@@ -46,9 +61,9 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds }) => {
         <td>{transaction.payee}</td>
         <td>{transaction.category}</td>
         <td>{transaction.memo}</td>
-        <td>{transaction.amount}</td>
-        <td></td>
-        <td></td>
+        <td>{transaction.amount < 0 && `$${transaction.amount.toFixed(2)}`}</td>
+        <td>{transaction.amount > 0 && `$${transaction.amount.toFixed(2)}`}</td>
+        <td>{`$${balance.toFixed(2)}`}</td>
         <td>{transaction.cleared ? "C" : ""}</td>
     </tr>
   )

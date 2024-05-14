@@ -10,11 +10,13 @@ const Transactions = () => {
     useEffect(() => {
         axios.get("https://localhost:7029/api/transaction")
             .then(response => {
-                setTransactions(response.data);
+                const data = response.data;
+                data.sort((a, b) => {
+                    return new Date(a.date) - new Date(b.date);
+                });
+                setTransactions(data);
             });
-
     }, []);
-    
 
   return (
     <>
@@ -34,7 +36,7 @@ const Transactions = () => {
             </thead>
             <tbody>
                 {transactions.map(transaction => {
-                    return <TransactionRow transaction={transaction} key={transaction.id} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />
+                    return <TransactionRow transactions={transactions} transaction={transaction} key={transaction.id} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />
                 })} 
             </tbody>
         </table>
