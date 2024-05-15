@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions }) => {
+const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions, handleContextMenu }) => {
   const [balance, setBalance] = useState(0);
 
   // style when a row is selected
@@ -55,7 +55,7 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions
   }, [transaction, transactions]);
 
   return (
-    <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}}>
+    <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}} onContextMenu={(e) => handleContextMenu(e)} >
         <td><input type="checkbox" /></td>
         <td>{transaction.date}</td>
         <td>{transaction.payee}</td>
