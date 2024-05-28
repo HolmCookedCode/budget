@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("budget.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+831ef473881a157796054b31f25e8658521f093f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d64bb75ffd82d43f24d97c113f36c67d0b66562")]
 [assembly: System.Reflection.AssemblyProductAttribute("budget.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("budget.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

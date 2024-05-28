@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from 'react'
 
-const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions, handleContextMenu }) => {
+const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions, setContextConfig }) => {
   const [balance, setBalance] = useState(0);
 
   // style when a row is selected
   const dynamicStyle = {
     "backgroundColor": "yellow"
   };
+
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+
+    setContextConfig({
+            show: true,
+            x: e.pageX,
+            y: e.pageY
+        });
+};
 
   const handleSelect = (e) => {
       // if you control click something
@@ -61,7 +71,7 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions
         <td>{transaction.payee}</td>
         <td>{transaction.category}</td>
         <td>{transaction.memo}</td>
-        <td>{transaction.amount < 0 && `$${transaction.amount.toFixed(2)}`}</td>
+        <td>{transaction.amount < 0 && `$${Math.abs(transaction.amount).toFixed(2)}`}</td>
         <td>{transaction.amount > 0 && `$${transaction.amount.toFixed(2)}`}</td>
         <td>{`$${balance.toFixed(2)}`}</td>
         <td>{transaction.cleared ? "C" : ""}</td>

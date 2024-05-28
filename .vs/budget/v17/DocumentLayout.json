@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "U:\\Projects\\Portfolio\\budget\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\budget.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\budget.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\entities\\banktransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\entities\\banktransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\budget.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\budget.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|u:\\projects\\portfolio\\budget\\budget.api\\migrations\\20240528102924_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FB5BC2B-D950-4ED1-BF7B-D0CBDADBF8F4}|budget.API\\budget.API.csproj|solutionrelative:budget.api\\migrations\\20240528102924_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +42,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 529,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240528102924_Initial.cs",
+              "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\Migrations\\20240528102924_Initial.cs",
+              "RelativeDocumentMoniker": "budget.API\\Migrations\\20240528102924_Initial.cs",
+              "ToolTip": "U:\\Projects\\Portfolio\\budget\\budget.API\\Migrations\\20240528102924_Initial.cs",
+              "RelativeToolTip": "budget.API\\Migrations\\20240528102924_Initial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T10:29:24.457Z"
             },
             {
               "$type": "Document",
@@ -52,13 +68,13 @@
               "RelativeDocumentMoniker": "budget.API\\Program.cs",
               "ToolTip": "U:\\Projects\\Portfolio\\budget\\budget.API\\Program.cs",
               "RelativeToolTip": "budget.API\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T14:45:53.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\appsettings.json",
               "RelativeDocumentMoniker": "budget.API\\appsettings.json",
@@ -70,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DataContext.cs",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "budget.API\\Data\\DataContext.cs",
@@ -82,20 +98,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\Controllers\\TransactionController.cs",
               "RelativeDocumentMoniker": "budget.API\\Controllers\\TransactionController.cs",
               "ToolTip": "U:\\Projects\\Portfolio\\budget\\budget.API\\Controllers\\TransactionController.cs",
               "RelativeToolTip": "budget.API\\Controllers\\TransactionController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwBwAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T14:19:59.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T14:19:59.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "TransactionDto.cs",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\DTOs\\TransactionDto.cs",
               "RelativeDocumentMoniker": "budget.API\\DTOs\\TransactionDto.cs",
@@ -107,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BankTransaction.cs",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\Entities\\BankTransaction.cs",
               "RelativeDocumentMoniker": "budget.API\\Entities\\BankTransaction.cs",
@@ -119,15 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "budget.API.csproj",
               "DocumentMoniker": "U:\\Projects\\Portfolio\\budget\\budget.API\\budget.API.csproj",
               "RelativeDocumentMoniker": "budget.API\\budget.API.csproj",
               "ToolTip": "U:\\Projects\\Portfolio\\budget\\budget.API\\budget.API.csproj",
               "RelativeToolTip": "budget.API\\budget.API.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-14T14:20:14.281Z"
+              "WhenOpened": "2024-05-14T14:20:14.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

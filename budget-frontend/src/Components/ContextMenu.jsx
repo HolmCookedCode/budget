@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContextMenu = ({ x, y }) => {
+const ContextMenu = ({ x, y, innerRef }) => {
     const dynamicStyle = {
         position: "absolute",
         top: y,
@@ -16,7 +16,7 @@ const ContextMenu = ({ x, y }) => {
 
 
   return (
-    <div style={dynamicStyle} onContextMenu={(e) => handleContextMenu(e)}>
+    <div style={dynamicStyle} onContextMenu={(e) => handleContextMenu(e)} ref={innerRef}>
       ContextMenu
     </div>
   )
