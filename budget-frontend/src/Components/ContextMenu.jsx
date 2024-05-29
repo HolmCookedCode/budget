@@ -17,7 +17,7 @@ const ContextMenu = ({ x, y, innerRef }) => {
 
   return (
     <div style={dynamicStyle} onContextMenu={(e) => handleContextMenu(e)} ref={innerRef}>
-      ContextMenu
+      Delete
     </div>
   )
 }

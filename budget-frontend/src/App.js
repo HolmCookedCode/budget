@@ -11,8 +11,10 @@ function App() {
   useEffect(() => {
     if (contextConfig.show) {
       document.addEventListener("mousedown", (e) => {
-        if (!contextRef.current.contains(e.target)) {
-          setContextConfig({ show: false, x: 0, y: 0 });
+        if (contextRef.current != null) {
+          if (!contextRef.current.contains(e.target)) {
+            setContextConfig({ show: false, x: 0, y: 0 });
+          }
         }
       });
     }

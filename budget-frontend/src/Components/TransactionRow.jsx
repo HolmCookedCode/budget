@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 
-const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions, setContextConfig }) => {
+const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions, setContextConfig, editProp, dbTransaction, setDbTransaction }) => {
   const [balance, setBalance] = useState(0);
+  const [editing, setEditing] = useState(editProp);
 
   // style when a row is selected
   const dynamicStyle = {
@@ -46,7 +47,6 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions
         // it should select only that row 
         setSelectedIds([transaction.id]);
       }
-      // the selection should not change if it is already selected
     }
   };
 
@@ -64,18 +64,67 @@ const TransactionRow = ({ transaction, selectedIds, setSelectedIds, transactions
     setBalance(total);
   }, [transaction, transactions]);
 
+  const handleDateChange = (e) => {
+    setDbTransaction({...dbTransaction, date: e.target.value});
+  };
+
+  const handlePayeeChange = (e) => {
+    setDbTransaction({...dbTransaction, payee: e.target.value});
+  }
+
+  const handleCategoryChange = (e) => {
+    setDbTransaction({...dbTransaction, category: e.target.value});
+  }
+
+  const handleMemoChange = (e) => {
+    setDbTransaction({...dbTransaction, memo: e.target.value});
+  }
+
+  const handleNegativeAmountChange = (e) => {
+    const dbAmount = e.target.value * -1;
+    // TODO logic for setting inflow field to nothing
+    setDbTransaction({...dbTransaction, amount: dbAmount});
+  }
+
+  const handlePositiveAmountChange = (e) => {
+    // TODO logic for setting inflow field to nothing
+    setDbTransaction({...dbTransaction, amount: e.target.value});
+  }
+
+  const handleClearedChange = (e) => {
+    setDbTransaction({...dbTransaction, cleared: e.target.value});
+  }
+
   return (
-    <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}} onContextMenu={(e) => handleContextMenu(e)} >
-        <td><input type="checkbox" /></td>
-        <td>{transaction.date}</td>
-        <td>{transaction.payee}</td>
-        <td>{transaction.category}</td>
-        <td>{transaction.memo}</td>
-        <td>{transaction.amount < 0 && `$${Math.abs(transaction.amount).toFixed(2)}`}</td>
-        <td>{transaction.amount > 0 && `$${transaction.amount.toFixed(2)}`}</td>
-        <td>{`$${balance.toFixed(2)}`}</td>
-        <td>{transaction.cleared ? "C" : ""}</td>
-    </tr>
+      <>
+        {editing ? 
+        // view when editing
+          <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}} onContextMenu={(e) => handleContextMenu(e)} >
+            <td><input type="checkbox" /></td>
+            <td><input type="date" onChange={(e) => handleDateChange(e)} /></td>
+            <td><input type="text" onChange={(e) => handlePayeeChange(e)} /></td>
+            <td><input type="text" onChange={(e) => handleCategoryChange(e)} /></td>
+            <td><input type="text" onChange={(e) => handleMemoChange(e)} /></td>
+            <td><input type="number" onChange={(e) => handleNegativeAmountChange(e)} /></td>
+            <td><input type="number" onChange={(e) => handlePositiveAmountChange(e)} /></td>
+            <td>Balance</td>
+            <td><input type="checkbox" onChange={(e) => handleClearedChange(e)} /></td>
+          </tr>
+        : 
+        // standard view
+          <tr onMouseDown={(e) => handleSelect(e)} style={selectedIds.includes(transaction.id) ? dynamicStyle : {}} onContextMenu={(e) => handleContextMenu(e)} >
+            <td><input type="checkbox" /></td>
+            <td>{transaction.date}</td>
+            <td>{transaction.payee}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.memo}</td>
+            <td>{transaction.amount < 0 && `$${Math.abs(transaction.amount).toFixed(2)}`}</td>
+            <td>{transaction.amount > 0 && `$${transaction.amount.toFixed(2)}`}</td>
+            <td>{`$${balance.toFixed(2)}`}</td>
+            <td>{transaction.cleared ? "C" : ""}</td>
+          </tr>
+        }
+      </>
   )
 }
 
